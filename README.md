@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Splash.png" width="200">
+<img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Splash.png">
 
 ### Installation ###
 1. Navigate to `https://github.com/DarkLive/Dark-Toolbox/releases/latest` or click [here](https://github.com/DarkLive/Dark-Toolbox/releases/latest).
