@@ -5,7 +5,7 @@
 2. Download the latest version.
 
 ### Modules ###
-<img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/cpuoptimizertile.png" style="width: 200px;"/>
+<img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/cpuoptimizertile.png" style="width: 200px; height: 200px;"/>
 
 ##What it does:##
 1)After Activation: Limits every process listed on "left list" to CPU00(Core1).
