@@ -10,11 +10,11 @@
 
 #### Features: ####
 
-1)&nbsp;After Activation: Limits every process listed on "left list" to CPU00(Core1).
+1)&nbsp;After Activation: Limits every process listed on "left list" to CPU00(Core01).
 
 &nbsp;&nbsp;&nbsp;&nbsp;After Deactivation: Limits every process listed on "left list" to every core.
   
-2)&nbsp;After Activation: Limits every process listed on "right list" to every core except CPU00(Core1).
+2)&nbsp;After Activation: Limits every process listed on "right list" to every core except CPU00(Core01).
 
 &nbsp;&nbsp;&nbsp;&nbsp;After Deactivation: Limits every process listed on "right list" to every core.
   
@@ -28,16 +28,14 @@
 
 #### Features: ####
 
-1)&nbsp;Checks the selected location for files crated/modified at dates selected and extract it. 
-
-2)&nbsp;Prompts with found files list and ask if you want to extract it. (Folder or Zip)
+1)&nbsp;Checks the selected location for files crated/modified at dates selected and extract it. Prompts you with found files list and ask if you want to extract it. (Folder or Zip)
 ***
 
 <img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/eventscheduletile.png" width="200">
 
 #### Features: ####
 
-1)&nbsp;Creates Events based on time and trigger type. (e.g. Launch app at xx:xx / Close computer at xx:xx)
+1)&nbsp;Creates timed events based on time and trigger type. (e.g. Launch app at xx:xx / Close computer at xx:xx etc.)
 ***
 
 <img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/gammatile.png" width="200">
