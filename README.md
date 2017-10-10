@@ -7,7 +7,7 @@
 ### Modules ###
 <img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/cpuoptimizertile.png" width="200">
 
-## Features: ##
+#### Features: ####
 
 1)After Activation: Limits every process listed on "left list" to CPU00(Core1).
 
