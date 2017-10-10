@@ -2,6 +2,7 @@
 
 ### Installation ###
 1)&nbsp;Navigate to `https://github.com/DarkLive/Dark-Toolbox/releases/latest` or click [here](https://github.com/DarkLive/Dark-Toolbox/releases/latest).
+
 2)&nbsp;Download the latest version.
 
 ### Modules ###
@@ -27,7 +28,9 @@
 
 #### Features: ####
 
-1)&nbsp;Searches the selected location for files crated/modified at dates selected and extract it. (Folder or Zip)
+1)&nbsp;Checks the selected location for files crated/modified at dates selected and extract it. 
+
+2)&nbsp;Prompts with found files list and ask if you want to extract it. (Folder or Zip)
 ***
 
 <img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/eventscheduletile.png" width="200">
