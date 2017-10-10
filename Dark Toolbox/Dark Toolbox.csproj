@@ -16,17 +16,18 @@
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateEnabled>false</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
+    <MapFileExtensions>false</MapFileExtensions>
     <UpdateUrl>http://github.com/DarkLive/Dark-Toolbox/tree/master/Dark%2520Toolbox/publish/</UpdateUrl>
     <SupportUrl>https://github.com/DarkLive/Dark-Toolbox</SupportUrl>
     <ProductName>Dark Toolbox</ProductName>
     <PublisherName>Ege E. Turan %28DarkLive%29</PublisherName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
@@ -124,9 +125,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="InfoBox.xaml.cs">
-      <DependentUpon>InfoBox.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MessageBoxManager.cs" />
     <Compile Include="ToolCPUCore.xaml.cs">
       <DependentUpon>ToolCPUCore.xaml</DependentUpon>
@@ -179,10 +177,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="InfoBox.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Resources\Icons.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -220,6 +214,19 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Dark-Icons\cpuoptimizeicon.png" />
+    <Resource Include="Resources\Dark-Icons\cpuoptimizertile.png" />
+    <Resource Include="Resources\Dark-Icons\eventscheduleicon.png" />
+    <Resource Include="Resources\Dark-Icons\eventscheduletile.png" />
+    <Resource Include="Resources\Dark-Icons\gammaicon.png" />
+    <Resource Include="Resources\Dark-Icons\gammatile.png" />
+    <Resource Include="Resources\Dark-Icons\uppackericon.png" />
+    <Resource Include="Resources\Dark-Icons\uppackertile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Dark-Icons\placeholdertile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

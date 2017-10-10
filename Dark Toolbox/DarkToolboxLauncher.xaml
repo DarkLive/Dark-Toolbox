@@ -6,12 +6,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dark_Toolbox"
         mc:Ignorable="d"
-        Title="Dark Toolbox" Height="400" Width="700">
-    
+        Title="Dark Toolbox" Height="500" Width="740">
+
     <Grid>
-        <Button Content="Schedule" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,10,0,0" Click="Navigate"/>
-        <Button Content="Gamma" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="170,10,0,0" Click="Navigate"/>
-        <Button Content="Packer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="90,10,0,0" Click="Navigate"/>
-        <Button Content="Core" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="250,10,0,0" Click="Navigate"/>
+        <Button x:Name="CPUOptimizer" Margin="10,10,600,324" Background="#424242" Click="Navigate">
+            <Image Source="Resources/Dark-Icons/cpuoptimizertile.png"/>
+        </Button>
+        <Button x:Name="UpdatePacker" Margin="150,10,460,324" Background="#424242" Click="Navigate">
+            <Image Source="Resources/Dark-Icons/uppackertile.png"/>
+        </Button>
+        <Button x:Name="EventScheduler" Margin="300,10,310,324" Background="#424242" Click="Navigate">
+            <Image Source="Resources/Dark-Icons/eventscheduletile.png"/>
+        </Button>
+        <Button x:Name="GammaModifier" Margin="450,10,160,324" Background="#424242" Click="Navigate">
+            <Image Source="Resources/Dark-Icons/gammatile.png"/>
+        </Button>
+        <Button x:Name="Placeholder" Margin="600,10,10,324" Background="#424242" Click="Navigate">
+            <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
+        </Button>
+
     </Grid>
 </controls:MetroWindow>
