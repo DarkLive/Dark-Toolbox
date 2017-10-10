@@ -1,37 +1,50 @@
-![alt text](https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Splash.png)
+<img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Splash.png" width="200">
 
 ### Installation ###
 1. Navigate to `https://github.com/DarkLive/Dark-Toolbox/releases/latest` or click [here](https://github.com/DarkLive/Dark-Toolbox/releases/latest).
 2. Download the latest version.
 
 ### Modules ###
-<img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/cpuoptimizertile.png" style="width: 200px; height: 200px;"/>
+<img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/cpuoptimizertile.png" width="200">
 
 ##What it does:##
+
 1)After Activation: Limits every process listed on "left list" to CPU00(Core1).
-  After Deactivation: Limits every process listed on "left list" to every core.
+
+&nbsp;&nbsp;&nbsp;After Deactivation: Limits every process listed on "left list" to every core.
+  
 2)After Activation: Limits every process listed on "right list" to every core except CPU00(Core1).
-  After Deactivation: Limits every process listed on "right list" to every core.
+
+&nbsp;&nbsp;&nbsp;After Deactivation: Limits every process listed on "right list" to every core.
+  
 3)After Activation: Changes process priority of every process on "right list" to "High".
-  After Deactivation: Changes process priority of every process on "right list" to "Normal".
+
+&nbsp;&nbsp;&nbsp;After Deactivation: Changes process priority of every process on "right list" to "Normal".
+  
 ***
 
-![alt text](https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/uppackertile.png)
+<img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/uppackertile.png" width="200">
 
 ##What it does:##
+
 1)Searches the selected location for files crated/modified at dates selected and extract it. (Folder or Zip)
 ***
 
-![alt text](https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/eventscheduletile.png)
+<img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/eventscheduletile.png" width="200">
 
 ##What it does:##
+
 1)Creates Events based on time and trigger type. (e.g. Launch app at xx:xx / Close computer at xx:xx)
 ***
 
-![alt text](https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/gammatile.png)
+<img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/gammatile.png" width="200">
 
 ##What it does:##
-1)Gives you some Gamma/RGB Sliders as 2 group of controls. Combined: One slider to decrease/increase brightness.
-                                                           RGB: Three slider to change screen colors.
+
+1)Gives you some Gamma/RGB Sliders as 2 group of controls. 
+
+Combined: One slider to decrease/increase brightness.
+
+RGB: Three slider to change screen colors.
 ***
   
