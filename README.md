@@ -9,15 +9,15 @@
 
 #### Features: ####
 
-1)After Activation: Limits every process listed on "left list" to CPU00(Core1).
+1) After Activation: Limits every process listed on "left list" to CPU00(Core1).
 
 &nbsp;&nbsp;&nbsp;After Deactivation: Limits every process listed on "left list" to every core.
   
-2)After Activation: Limits every process listed on "right list" to every core except CPU00(Core1).
+2) After Activation: Limits every process listed on "right list" to every core except CPU00(Core1).
 
 &nbsp;&nbsp;&nbsp;After Deactivation: Limits every process listed on "right list" to every core.
   
-3)After Activation: Changes process priority of every process on "right list" to "High".
+3) After Activation: Changes process priority of every process on "right list" to "High".
 
 &nbsp;&nbsp;&nbsp;After Deactivation: Changes process priority of every process on "right list" to "Normal".
   
