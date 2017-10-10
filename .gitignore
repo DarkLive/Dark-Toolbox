@@ -259,3 +259,5 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/Dark Toolbox/Resources/Dark-Icons/icontemp.psd
+/Dark Toolbox/Resources/Dark-Icons/icontemp.psd

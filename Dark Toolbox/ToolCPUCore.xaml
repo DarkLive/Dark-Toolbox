@@ -7,7 +7,8 @@
         xmlns:local="clr-namespace:Dark_Toolbox"
         xmlns:Custom="http://metro.mahapps.com/winfx/xaml/iconpacks" x:Class="Dark_Toolbox.ToolCPUCore"
         mc:Ignorable="d"
-        Title="CPU Optimizer" Height="400" Width="609" Loaded="SetTimer">
+        GlowBrush="{DynamicResource AccentColorBrush}"
+        Title="CPU Optimizer" Height="400" Width="609" Loaded="SetTimer" ResizeMode="NoResize" Icon="Resources/Dark-Icons/cpuoptimizeicon.png">
     <Grid>
         <ListBox x:Name="leftlist" HorizontalAlignment="Left" Height="315" VerticalAlignment="Top" Width="155" Margin="12,46,0,0"/>
         <ListBox x:Name="rightlist" HorizontalAlignment="Left" Height="315" VerticalAlignment="Top" Width="155" Margin="245,46,0,0"/>

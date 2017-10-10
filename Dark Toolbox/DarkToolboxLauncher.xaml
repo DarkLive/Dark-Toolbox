@@ -6,7 +6,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dark_Toolbox"
         mc:Ignorable="d"
-        Title="Dark Toolbox" Height="500" Width="740">
+        GlowBrush="{DynamicResource AccentColorBrush}"
+        Title="Dark Toolbox" Height="500" Width="740" Icon="Resources/Dark-Icons/toolboxicon.png" ResizeMode="NoResize">
 
     <Grid>
         <Button x:Name="CPUOptimizer" Margin="10,10,600,324" Background="#424242" Click="Navigate">
@@ -24,6 +25,5 @@
         <Button x:Name="Placeholder" Margin="600,10,10,324" Background="#424242" Click="Navigate">
             <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
         </Button>
-
     </Grid>
 </controls:MetroWindow>
