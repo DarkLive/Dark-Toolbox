@@ -41,9 +41,9 @@
 
 #### Features: ####
 
-1)Gives you some Gamma/RGB Sliders as 2 group of controls. 
+1)Gives you 2 groups of sliders. 
 
-Combined: One slider to decrease/increase brightness.
+Combined: One slider to decrease/increase screen brightness.
 
 RGB: Three slider to change screen colors.
 ***
