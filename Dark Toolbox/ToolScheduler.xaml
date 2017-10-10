@@ -1,0 +1,31 @@
+﻿<controls:MetroWindow x:Class="Dark_Toolbox.ToolScheduler"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dark_Toolbox"
+        mc:Ignorable="d"
+        Title="Scheduler" Height="400" Width="700" Loaded="SetTimer">
+
+    <Grid>
+        <controls:DateTimePicker x:Name="triggertimepicker" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,36,0,0" Width="185"/>
+        <Label Content="Trigger Time:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,10,0,0" Foreground="#FF787878"/>
+        <Label Content="Triggers:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,10,0,0" Foreground="#FF787878"/>
+        <ListBox x:Name="knowntriggers" HorizontalAlignment="Left" Height="313" VerticalAlignment="Top" Width="274" Margin="408,36,0,0" Background="#FF787878"/>
+        <Button x:Name="schedulethis" Content="Schedule Trigger" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Margin="14,332,0,0" Click="schedulethis_Click"/>
+        <ComboBox x:Name="triggertypepicker" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185" Margin="12,94,0,0">
+            <ComboBoxItem Selected="comboselect">Start Software</ComboBoxItem>
+            <ComboBoxItem Selected="comboselect">Close Software</ComboBoxItem>
+            <ComboBoxItem Selected="comboselect">Lock Computer</ComboBoxItem>
+            <ComboBoxItem Selected="comboselect">Sleep Computer</ComboBoxItem>
+            <ComboBoxItem Selected="comboselect">Hibernate Computer</ComboBoxItem>
+            <ComboBoxItem Selected="comboselect">Restart Computer</ComboBoxItem>
+            <ComboBoxItem Selected="comboselect">Shutdown Computer</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Trigger Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,68,0,0" Foreground="#FF787878"/>
+        <Label x:Name="softwarelocklabel" Content="Selected Software Location:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,121,0,0" Foreground="#FF787878"/>
+        <TextBlock x:Name="softwareloc" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="12,147,0,0" Width="374" Height="70" Foreground="#FF787878"/>
+
+    </Grid>
+</controls:MetroWindow>

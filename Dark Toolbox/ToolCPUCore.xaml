@@ -1,0 +1,47 @@
+﻿<controls:MetroWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dark_Toolbox"
+        xmlns:Custom="http://metro.mahapps.com/winfx/xaml/iconpacks" x:Class="Dark_Toolbox.ToolCPUCore"
+        mc:Ignorable="d"
+        Title="CPU Optimizer" Height="400" Width="609" Loaded="SetTimer">
+    <Grid>
+        <ListBox x:Name="leftlist" HorizontalAlignment="Left" Height="315" VerticalAlignment="Top" Width="155" Margin="12,46,0,0"/>
+        <ListBox x:Name="rightlist" HorizontalAlignment="Left" Height="315" VerticalAlignment="Top" Width="155" Margin="245,46,0,0"/>
+        <Button x:Name="clearbutton" Margin="172,271,370,8" Click="clearbutton_Click">
+            <Rectangle Width="35" Height="18">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{StaticResource appbar_clean}" />
+                </Rectangle.Fill>
+            </Rectangle>
+        </Button>
+        <Button x:Name="itemtoright" Margin="172,46,370,233" Click="itemtoright_Click">
+            <Rectangle Width="35" Height="18">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{StaticResource appbar_arrow_right}" />
+                </Rectangle.Fill>
+            </Rectangle>
+        </Button>
+        <Button x:Name="itemtoleft" Margin="172,156,370,122" Click="itemtoleft_Click">
+            <Rectangle Width="35" Height="18">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{StaticResource appbar_arrow_left}" />
+                </Rectangle.Fill>
+            </Rectangle>
+        </Button>
+        <controls:ToggleSwitchButton x:Name="onoffswitch" Content="ToggleSwitchButton" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="522,319,0,0" Click="onoffswitch_Click"/>
+        <Label x:Name="status" Content="OFF" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="522,288,0,0" Foreground="Red" FontWeight="Bold" FontSize="16"/>
+        <Label Content="Total:" Foreground="#FF787878" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="417,46,0,0"/>
+        <Label x:Name="totalprosses" Content="x" Foreground="#FF787878" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="452,46,0,0"/>
+        <Menu DockPanel.Dock="Top" Margin="0,0,0,340">
+            <MenuItem Header="_Settings">
+                <Separator />
+                <CheckBox x:Name="keepfly" Content="_Keep isolating the cpu on fly." />
+                <Separator />
+            </MenuItem>
+        </Menu>
+    </Grid>
+</controls:MetroWindow>

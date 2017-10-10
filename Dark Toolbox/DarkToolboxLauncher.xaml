@@ -1,0 +1,17 @@
+﻿<controls:MetroWindow x:Class="Dark_Toolbox.DarkToolboxLauncher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dark_Toolbox"
+        mc:Ignorable="d"
+        Title="Dark Toolbox" Height="400" Width="700">
+    
+    <Grid>
+        <Button Content="Schedule" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,10,0,0" Click="Navigate"/>
+        <Button Content="Gamma" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="170,10,0,0" Click="Navigate"/>
+        <Button Content="Packer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="90,10,0,0" Click="Navigate"/>
+        <Button Content="Core" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="250,10,0,0" Click="Navigate"/>
+    </Grid>
+</controls:MetroWindow>

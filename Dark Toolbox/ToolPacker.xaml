@@ -1,0 +1,28 @@
+﻿<controls:MetroWindow x:Class="Dark_Toolbox.ToolPacker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dark_Toolbox"
+        mc:Ignorable="d"
+        Title="Update Packer" Height="334.542" Width="320">
+    <Grid>
+        <Label Content="Location:" HorizontalAlignment="Left" Foreground="#FF787878" Margin="0,0,0,230"/>
+        <Button x:Name="picklocationbutton" Content="Pick Location" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="228,22,0,0" Click="picklocationbutton_Click" FontSize="8"/>
+        <TextBlock x:Name="locationtext" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="10,22,0,0" Height="35" Width="213" Foreground="#FF787878" Text="..."/>
+        <DatePicker x:Name="startdatepicker" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="73,72,0,0" Width="127"/>
+        <DatePicker x:Name="enddatepicker" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="73,114,0,0" Width="127"/>
+        <Label Content="Start Date:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF787878" Margin="10,72,0,0"/>
+        <Label Content="End Date:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF787878" Margin="10,114,0,0"/>
+        <CheckBox x:Name="endtoday" Content="Today" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="205,118,0,0" Foreground="#FF787878" Click="checkend"/>
+        <CheckBox x:Name="starttoday" Content="Today" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="205,76,0,0" Foreground="#FF787878" Click="checkstart"/>
+        <Button x:Name="extract" Content="Preview &amp; Extract" VerticalAlignment="Top" Margin="107,269,107,0" FontSize="8" Click="extract_Click"/>
+        <RadioButton x:Name="extractfolder" Content="Folder" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,237,0,0" Foreground="#FF787878" GroupName="extractiontype" IsChecked="True" />
+        <Label Content="Extraction Type:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF787878" Margin="10,209,0,0"/>
+        <RadioButton x:Name="extractzip" Content="Zip" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="88,237,0,0" Foreground="#FF787878" GroupName="extractiontype"/>
+        <RadioButton x:Name="searchmain" Content="Main Folder" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="22,182,0,0" Foreground="#FF787878" GroupName="searchdepth" IsChecked="True"/>
+        <Label Content="Search Pattern:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF787878" Margin="10,154,0,0"/>
+        <RadioButton x:Name="searchmainsub" Content="Main Folder+Subfolders" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="118,182,0,0" Foreground="#FF787878" GroupName="searchdepth"/>
+    </Grid>
+</controls:MetroWindow>
