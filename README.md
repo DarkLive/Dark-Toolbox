@@ -9,7 +9,7 @@
 
 #### Features: ####
 
-1) After Activation: Limits every process listed on "left list" to CPU00(Core1).
+1)) After Activation: Limits every process listed on "left list" to CPU00(Core1).
 
 &nbsp;&nbsp;&nbsp;After Deactivation: Limits every process listed on "left list" to every core.
   
