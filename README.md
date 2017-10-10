@@ -7,7 +7,7 @@
 ### Modules ###
 <img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/cpuoptimizertile.png" width="200">
 
-## What it does: ##
+## Features: ##
 
 1)After Activation: Limits every process listed on "left list" to CPU00(Core1).
 
@@ -25,21 +25,21 @@
 
 <img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/uppackertile.png" width="200">
 
-## What it does: ##
+## Features: ##
 
 1)Searches the selected location for files crated/modified at dates selected and extract it. (Folder or Zip)
 ***
 
 <img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/eventscheduletile.png" width="200">
 
-## What it does: ##
+## Features: ##
 
 1)Creates Events based on time and trigger type. (e.g. Launch app at xx:xx / Close computer at xx:xx)
 ***
 
 <img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/gammatile.png" width="200">
 
-## What it does: ##
+## Features: ##
 
 1)Gives you some Gamma/RGB Sliders as 2 group of controls. 
 
