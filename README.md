@@ -1,11 +1,11 @@
 <img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Splash.png">
 
-### Installation ###
+## Installation ##
 1)&nbsp;Navigate to `https://github.com/DarkLive/Dark-Toolbox/releases/latest` or click [here](https://github.com/DarkLive/Dark-Toolbox/releases/latest).
 
 2)&nbsp;Download the latest version.
 
-### Modules ###
+## Modules ##
 <img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/cpuoptimizertile.png" width="200">
 
 #### Features: ####
