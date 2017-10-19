@@ -1,0 +1,30 @@
+﻿<controls:MetroWindow x:Class="Dark_Toolbox.ToolRenamer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dark_Toolbox"
+        mc:Ignorable="d"
+        GlowBrush="{DynamicResource AccentColorBrush}"
+        Title="Bulk Renamer" Height="249.79" Width="348.893" ResizeMode="NoResize">
+    <Grid>
+
+        <TextBlock x:Name="locationtext" HorizontalAlignment="Left" TextWrapping="Wrap" Text="..." VerticalAlignment="Top" Foreground="#FF787878" Height="35" Width="213" Margin="16,31,0,0"/>
+        <Button x:Name="picklocationbutton" Content="Pick Location" VerticalAlignment="Top" Margin="256,31,0,0" Click="picklocationbutton_Click" FontSize="8" HorizontalAlignment="Left" Width="75"/>
+        <RadioButton x:Name="radrename" Content="Rename" GroupName="worktype" IsChecked="True" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF787878" Margin="10,71,0,0" Click="radiocheck"/>
+        <RadioButton x:Name="radretag" Content="Remove Tag" GroupName="worktype" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF787878" Margin="91,71,0,0" Click="radiocheck"/>
+        <TextBox x:Name="selecextension" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" Margin="99,101,0,0" controls:TextBoxHelper.Watermark="e.g. (.exe / .png)"/>
+        <TextBox x:Name="selecfilenameout" HorizontalAlignment="Left" Visibility="Visible" Height="23" TextWrapping="Wrap" controls:TextBoxHelper.Watermark="e.g. ( Filename* / Filename*Tag ) " VerticalAlignment="Top" Width="200" Margin="99,132,0,0"/>
+        <ComboBox x:Name="selecfilenametag" HorizontalAlignment="Left" Visibility="Hidden" VerticalAlignment="Top" Width="123" Margin="100,132,0,0">
+            <ComboBoxItem Content="[TAG]"/>
+            <ComboBoxItem Content="(TAG)"/>
+        </ComboBox>
+        <Button x:Name="start" Content="Start" HorizontalAlignment="Left" Width="75" Margin="256,182,0,0" Click="start_Click" Height="27" VerticalAlignment="Top"/>
+        <Label Content="Location:" Foreground="#FF787878" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <Label Content="File Extension:" Foreground="#FF787878" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,101,0,0"/>
+        <Label x:Name="filenamelabel" Content="Output Name :" Foreground="#FF787878" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,132,0,0"/>
+        <Label x:Name="filenametip" Content="* will determine the increasing number location." Foreground="#FF787878" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,154,0,0"/>
+
+    </Grid>
+</controls:MetroWindow>

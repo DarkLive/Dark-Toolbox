@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using Microsoft.VisualBasic;
 
 namespace Dark_Toolbox
 {
@@ -32,7 +33,12 @@ namespace Dark_Toolbox
                 ToolCPUCore NewPAGE = new ToolCPUCore();
                 NewPAGE.Show();
             }
-            else if (((Button)sender).Name.ToString() == "Placeholder")
+            else if (((Button)sender).Name.ToString() == "BulkRenamer")
+            {
+                ToolRenamer NewPAGE = new ToolRenamer();
+                NewPAGE.Show();
+            }
+            else
             {
                 MessageBox.Show("Probably");
             }

@@ -1,24 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 
 namespace Dark_Toolbox
 {
-    /// <summary>
-    /// Interaction logic for ToolCPUCore.xaml
-    /// </summary>
     public partial class ToolCPUCore
     {
         public ToolCPUCore()
@@ -98,6 +86,7 @@ namespace Dark_Toolbox
                 try
                 {
                     Process.GetProcessById(Convert.ToInt16(rightlist.Items[r].ToString().Substring(0, rightlist.Items[r].ToString().IndexOf(" || ")))).ProcessorAffinity = (IntPtr)254;
+                    Process.GetProcessById(Convert.ToInt16(rightlist.Items[r].ToString().Substring(0, rightlist.Items[r].ToString().IndexOf(" || ")))).PriorityClass = ProcessPriorityClass.High;
                     r++;
                 }
                 catch
@@ -134,6 +123,7 @@ namespace Dark_Toolbox
                 try
                 {
                     Process.GetProcessById(Convert.ToInt16(rightlist.Items[r].ToString().Substring(0, rightlist.Items[r].ToString().IndexOf(" || ")))).ProcessorAffinity = (IntPtr)255;
+                    Process.GetProcessById(Convert.ToInt16(rightlist.Items[r].ToString().Substring(0, rightlist.Items[r].ToString().IndexOf(" || ")))).PriorityClass = ProcessPriorityClass.Normal;
                     r++;
                 }
                 catch

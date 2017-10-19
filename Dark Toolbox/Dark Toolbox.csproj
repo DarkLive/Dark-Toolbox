@@ -29,7 +29,7 @@
     <PublisherName>Ege E. Turan %28DarkLive%29</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <ApplicationVersion>1.1.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -138,6 +138,9 @@
     <Compile Include="ToolPacker.xaml.cs">
       <DependentUpon>ToolPacker.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ToolRenamer.xaml.cs">
+      <DependentUpon>ToolRenamer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ToolScheduler.xaml.cs">
       <DependentUpon>ToolScheduler.xaml</DependentUpon>
     </Compile>
@@ -200,6 +203,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ToolRenamer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ToolScheduler.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -239,6 +246,10 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="toolboxico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Dark-Icons\bulkrenamericon.png" />
+    <Resource Include="Resources\Dark-Icons\bulkrenamertile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
