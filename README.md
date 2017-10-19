@@ -12,6 +12,7 @@
 #### Features: ####
 
 1)&nbsp;Renamer: Renames all files in the folder with increasing number. New filename and extension must be selected for accurate renaming. (e.g. Picture1,Picture2/Video1Sub,Video2Sub) 
+
 2)&nbsp;TagRemover: Removes tags from file names. (e.g. subtitle translator, uploader etc.) 
 ***
 
