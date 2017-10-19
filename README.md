@@ -23,7 +23,9 @@
 1)&nbsp;After Activation: Limits every process listed on "left list" to CPU00(Core01).
 
 &nbsp;&nbsp;&nbsp;&nbsp;After Activation: Changes process priority of every process on "right list" to "High".
+
 &nbsp;&nbsp;&nbsp;&nbsp;After Deactivation: Limits every process listed on "left list" to every core.
+
 &nbsp;&nbsp;&nbsp;&nbsp;After Deactivation: Changes process priority of every process on "right list" to "Normal".
   
 2)&nbsp;After Activation: Limits every process listed on "right list" to every core except CPU00(Core01).
