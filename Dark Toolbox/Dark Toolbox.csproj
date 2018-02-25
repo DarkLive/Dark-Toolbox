@@ -29,7 +29,7 @@
     <PublisherName>Ege E. Turan %28DarkLive%29</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.1.0.0</ApplicationVersion>
+    <ApplicationVersion>1.2.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -144,6 +144,9 @@
     <Compile Include="ToolScheduler.xaml.cs">
       <DependentUpon>ToolScheduler.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ToolStartup.xaml.cs">
+      <DependentUpon>ToolStartup.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DarkToolboxLauncher.xaml.cs">
@@ -211,6 +214,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ToolStartup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\WindowsIcons-license.txt" />
@@ -250,6 +257,10 @@
   <ItemGroup>
     <Resource Include="Resources\Dark-Icons\bulkrenamericon.png" />
     <Resource Include="Resources\Dark-Icons\bulkrenamertile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Dark-Icons\startupicon.png" />
+    <Resource Include="Resources\Dark-Icons\startuptile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

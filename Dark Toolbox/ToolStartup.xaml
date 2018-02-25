@@ -1,0 +1,28 @@
+﻿<controls:MetroWindow x:Class="Dark_Toolbox.ToolStartup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"                          
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dark_Toolbox"
+        mc:Ignorable="d"
+        GlowBrush="{DynamicResource AccentColorBrush}"                      
+        Title="Startup Manager" Height="349.19" Width="376.459" Icon="Resources/Dark-Icons/startupicon.png" ResizeMode="NoResize">
+    <Grid>
+        <ListBox HorizontalAlignment="Left" Height="200" Foreground="#424242" VerticalAlignment="Top" Width="161" Margin="197,108,0,0" Name="setactions"/>
+        <Label Content="Startup Actions:" Foreground="#424242" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="192,82,0,0"/>
+        <Label Content="Add Actions:" Foreground="#424242" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="8,88,0,0"/>
+        <ComboBox Name="actionlist" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="12,109,0,0">
+            <ComboBoxItem Selected="comboselect">Start Software</ComboBoxItem>
+            <ComboBoxItem Selected="comboselect">Close Software</ComboBoxItem>
+            <ComboBoxItem Selected="comboselect">Start Service</ComboBoxItem>
+            <ComboBoxItem Selected="comboselect">Close Service</ComboBoxItem>
+            <ComboBoxItem Selected="comboselect">Wait "x" Seconds</ComboBoxItem>
+        </ComboBox>
+        <Button Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" Width="39" Margin="102,200,0,0"  Click="Add_Click" />
+        <Button x:Name="installuninstallbutton" Content="X" VerticalAlignment="Top" Margin="146,27,146,0" Click="installuninstallbutton_Click"/>
+        <Label Content="N/A" Name="additionallabel" HorizontalAlignment="Left" Visibility="Hidden" Foreground="#424242" VerticalAlignment="Top" Margin="10,140,0,0"/>
+        <TextBox HorizontalAlignment="Left" Name="additionaltextbox" Height="23" TextWrapping="Wrap" Visibility="Hidden" Text="" VerticalAlignment="Top" Width="120" Margin="12,163,0,0"/>
+        <Label x:Name="seppo" Content="_______________________________________________________________________________________________________________________________________________" Foreground="#424242" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,54,0,0" Loaded="seppo_Loaded"/>
+    </Grid>
+</controls:MetroWindow>

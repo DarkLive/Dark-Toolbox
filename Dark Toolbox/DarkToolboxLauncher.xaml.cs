@@ -38,9 +38,13 @@ namespace Dark_Toolbox
                 ToolRenamer NewPAGE = new ToolRenamer();
                 NewPAGE.Show();
             }
+            else if (((Button)sender).Name.ToString() == "StartupManager")
+            {
+                ToolStartup NewPAGE = new ToolStartup();
+                NewPAGE.Show();
+            } 
             else
             {
-                MessageBox.Show("Probably");
             }
         }
     }

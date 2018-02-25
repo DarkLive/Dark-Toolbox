@@ -7,64 +7,55 @@
         xmlns:local="clr-namespace:Dark_Toolbox"
         mc:Ignorable="d"
         GlowBrush="{DynamicResource AccentColorBrush}"
-        Title="Dark Toolbox" Height="500" Width="740" Icon="Resources/Dark-Icons/toolboxicon.png" ResizeMode="NoResize">
+        Title="Dark Toolbox" Height="500" Width="710" Icon="Resources/Dark-Icons/toolboxicon.png" ResizeMode="NoResize">
 
     <Grid>
-        <Button x:Name="BulkRenamer" Margin="10,10,600,324" Background="#424242" Click="Navigate">
+        <Button x:Name="BulkRenamer" Margin="10,10,0,324" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/bulkrenamertile.png"/>
         </Button>
-        <Button x:Name="CPUOptimizer" Margin="150,10,460,324" Background="#424242" Click="Navigate">
+        <Button x:Name="CPUOptimizer" Margin="150,10,0,324" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/cpuoptimizertile.png"/>
         </Button>
-        <Button x:Name="EventScheduler" Margin="300,10,310,324" Background="#424242" Click="Navigate">
+        <Button x:Name="EventScheduler" Margin="290,10,0,324" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/eventscheduletile.png"/>
         </Button>
-        <Button x:Name="GammaModifier" Margin="450,10,160,324" Background="#424242" Click="Navigate">
+        <Button x:Name="GammaModifier" Margin="430,10,0,324" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/gammatile.png"/>
         </Button>
-        <Button x:Name="UpdatePacker" Margin="600,10,10,324" Background="#424242" Click="Navigate">
+        <Button x:Name="UpdatePacker" Margin="570,10,0,324" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/uppackertile.png"/>
         </Button>
-        <Button x:Name="Placeholder_Copy" Margin="10,167,600,167" Background="#424242" Click="Navigate">
+        <Button x:Name="StartupManager" Margin="10,167,0,167" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
+            <Image Source="Resources/Dark-Icons/startuptile.png"/>
+        </Button>
+        <Button x:Name="Placeholder_Copy2" Margin="150,167,0,167" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
         </Button>
-        <Button x:Name="Placeholder_Copy2" Margin="150,167,460,167" Background="#424242" Click="Navigate">
+        <Button x:Name="Placeholder_Copy1" Margin="290,167,0,167" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
         </Button>
-        <Button x:Name="Placeholder_Copy1" Margin="300,167,310,167" Background="#424242" Click="Navigate">
+        <Button x:Name="Placeholder_Copy3" Margin="430,167,0,167" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
         </Button>
-        <Button x:Name="Placeholder_Copy3" Margin="450,167,160,167" Background="#424242" Click="Navigate">
-            <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
-        </Button>
-        <Button x:Name="Placeholder_Copy4" Margin="600,167,10,167" Background="#424242" Click="Navigate">
+        <Button x:Name="Placeholder_Copy4" Margin="570,167,0,167" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
         </Button>
         <Button x:Name="Placeholder_Copy5" Margin="10,324,600,10" Background="#424242" Click="Navigate">
             <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
         </Button>
-        <Button x:Name="Placeholder_Copy6" Margin="10,324,600,10" Background="#424242" Click="Navigate">
+        <Button x:Name="Placeholder_Copy6" Margin="10,324,0,10" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
         </Button>
-        <Button x:Name="Placeholder_Copy7" Margin="150,324,460,10" Background="#424242" Click="Navigate">
+        <Button x:Name="Placeholder_Copy7" Margin="150,324,0,10" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
         </Button>
-        <Button x:Name="Placeholder_Copy8" Margin="300,324,310,10" Background="#424242" Click="Navigate">
+        <Button x:Name="Placeholder_Copy10" Margin="290,324,0,10" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
         </Button>
-        <Button x:Name="Placeholder_Copy9" Margin="300,324,310,10" Background="#424242" Click="Navigate">
+        <Button x:Name="Placeholder_Copy12" Margin="430,324,0,10" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
         </Button>
-        <Button x:Name="Placeholder_Copy10" Margin="300,324,310,10" Background="#424242" Click="Navigate">
-            <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
-        </Button>
-        <Button x:Name="Placeholder_Copy11" Margin="450,324,160,10" Background="#424242" Click="Navigate">
-            <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
-        </Button>
-        <Button x:Name="Placeholder_Copy12" Margin="450,324,160,10" Background="#424242" Click="Navigate">
-            <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
-        </Button>
-        <Button x:Name="Placeholder_Copy13" Margin="600,324,10,10" Background="#424242" Click="Navigate">
+        <Button x:Name="Placeholder_Copy13" Margin="570,324,0,10" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/placeholdertile.png"/>
         </Button>
     </Grid>
