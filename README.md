@@ -57,3 +57,10 @@ RGB: Three slider to change screen colors.
 
 1)&nbsp;Checks the selected location for files crated/modified at dates selected and extract it. Prompts you with found files list and ask if you want to extract it. (Folder or Zip)
 ***
+
+<img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/startuptile.png" width="200">
+
+#### Features: ####
+
+1)&nbsp;Lets users create a customizable startup batch (Start/Close Software, Start/Close Service, Wait "x" Second)
+***
