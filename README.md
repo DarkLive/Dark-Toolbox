@@ -42,7 +42,7 @@ After Deactivation: Removes any core limit and priority adjustments made to "lef
 
 Combined: One slider to decrease/increase screen brightness/gamma.
 
-RGB: Unlocked controllers that can do what "Combined Slider" does also can create warmer cooler effect by Red-Green-Blue sliders.
+RGB: Unlocked controllers that can do what "Combined Slider" does also can create warmer/cooler effect by Red-Green-Blue sliders.
 ***
 
 <img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/uppackertile.png" width="200">
