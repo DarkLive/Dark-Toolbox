@@ -22,7 +22,7 @@
 
 1)&nbsp;After Activation: Forces every process listed on "left list" to CPU00(Core01) and every process listed on "right list" to all cores except CPU00(Core01) also changes process priority of every process on "right list" to "High".
 
-&nbsp;&nbsp;&nbsp;&nbsp;After Deactivation: Removes any core limit and priority adjustments made to "left list" and "right list".
+2)&nbsp;After Deactivation: Removes any core limit and priority adjustments made to "left list" and "right list".
 ***
 
 <img src="https://raw.githubusercontent.com/DarkLive/Dark-Toolbox/master/Dark%20Toolbox/Resources/Dark-Icons/eventscheduletile.png" width="200">
