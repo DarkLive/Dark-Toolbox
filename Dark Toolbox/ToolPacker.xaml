@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:Dark_Toolbox"
         mc:Ignorable="d"
         GlowBrush="{DynamicResource AccentColorBrush}"
-        Title="Update Packer" Height="334.542" Width="320" ResizeMode="NoResize" Icon="Resources/Dark-Icons/uppackericon.png">
+        Title="Update Packer" Height="334.542" Width="320" ResizeMode="CanMinimize" Icon="Resources/Dark-Icons/uppackericon.png">
     <Grid>
         <Label Content="Location:" HorizontalAlignment="Left" Foreground="#FF787878" Margin="0,0,0,230"/>
         <Button x:Name="picklocationbutton" Content="Pick Location" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="228,22,0,0" Click="picklocationbutton_Click" FontSize="8"/>

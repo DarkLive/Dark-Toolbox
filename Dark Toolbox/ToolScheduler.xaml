@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:Dark_Toolbox"
         mc:Ignorable="d"
         GlowBrush="{DynamicResource AccentColorBrush}"
-        Title="Event Scheduler" Height="400" Width="700" Loaded="SetTimer" Icon="Resources/Dark-Icons/eventscheduleicon.png" ResizeMode="NoResize">
+        Title="Event Scheduler" Height="400" Width="700" Icon="Resources/Dark-Icons/eventscheduleicon.png" ResizeMode="CanMinimize">
     
     <Grid>
         <controls:DateTimePicker x:Name="triggertimepicker" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,36,0,0" Width="185"/>

@@ -9,19 +9,19 @@ namespace Dark_Toolbox
 {
     public partial class ToolCPUCore
     {
-        public ToolCPUCore()
-        {
-            InitializeComponent();
-        }
-
         int cpucore = 0, cpupoint = 0;
         DispatcherTimer timer = new DispatcherTimer();
         List<string> exclude = new List<string>(50);
 
+        public ToolCPUCore()
+        {
+            InitializeComponent();
+            timer.Tick += timer_Tick;
+            timer.Interval = TimeSpan.FromSeconds(30);
+        }
+
         public void SetTimer(object sender, RoutedEventArgs e)
         {
-            timer.Tick += timer_Tick;
-            timer.Interval = TimeSpan.FromSeconds(1);
             timer.Start();
 
             cpucore = Environment.ProcessorCount;

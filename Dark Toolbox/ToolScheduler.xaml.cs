@@ -9,26 +9,22 @@ namespace Dark_Toolbox
 {
     public partial class ToolScheduler
     {
-        public ToolScheduler()
-        {
-            InitializeComponent();
-            filebrowser.Filter = "ALL Files (*.*)|*.*|EXE Files (*.exe)|*.exe|BAT Files (*.bat)|*.bat";
-            softwarelocklabel.Visibility = Visibility.Hidden; softwareloc.Visibility = Visibility.Hidden;
-        }
-
-        public void SetTimer(object sender, RoutedEventArgs e)
-        {
-            timer.Tick += timer_Tick;
-            timer.Interval = TimeSpan.FromSeconds(1);
-            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
-        }
-
         DispatcherTimer timer = new DispatcherTimer();
         OpenFileDialog filebrowser = new OpenFileDialog();
         Process process = new Process();
         ProcessStartInfo startInfo = new ProcessStartInfo();
-        public string[,] que = new string[10,4];
+        public string[,] que = new string[10, 4];
         public int quecount = 0;
+
+        public ToolScheduler()
+        {
+            InitializeComponent();
+            timer.Tick += timer_Tick;
+            timer.Interval = TimeSpan.FromMinutes(1);
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            filebrowser.Filter = "ALL Files (*.*)|*.*|EXE Files (*.exe)|*.exe|BAT Files (*.bat)|*.bat";
+            softwarelocklabel.Visibility = Visibility.Hidden; softwareloc.Visibility = Visibility.Hidden;
+        }
 
         private void schedulethis_Click(object sender, RoutedEventArgs e)
         {

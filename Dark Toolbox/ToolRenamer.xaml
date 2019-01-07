@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:Dark_Toolbox"
         mc:Ignorable="d"
         GlowBrush="{DynamicResource AccentColorBrush}"
-        Title="Bulk Renamer" Height="249.79" Width="348.893" ResizeMode="NoResize">
+        Title="Bulk Renamer" Height="249.79" Width="348.893" ResizeMode="CanMinimize">
     <Grid>
 
         <TextBlock x:Name="locationtext" HorizontalAlignment="Left" TextWrapping="Wrap" Text="..." VerticalAlignment="Top" Foreground="#FF787878" Height="35" Width="213" Margin="16,31,0,0"/>

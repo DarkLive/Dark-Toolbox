@@ -1,20 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using Microsoft.Win32;
-using System.Diagnostics;
-using System.Windows.Threading;
 
 namespace Dark_Toolbox
 {
@@ -66,6 +54,8 @@ namespace Dark_Toolbox
                     }
                 }
                 file.Close();
+                actionlist.IsEnabled = true;
+                addbutton.IsEnabled = true;
                 installuninstallbutton.Content = "Uninstall";
             }
             else
@@ -118,6 +108,8 @@ namespace Dark_Toolbox
             {
                 File.Create(Environment.GetFolderPath(Environment.SpecialFolder.Startup) + "\\DarkStartup.bat").Close();
                 installuninstallbutton.Content = "Uninstall";
+                actionlist.IsEnabled = true;
+                addbutton.IsEnabled = true;
                 using (StreamWriter writer = new StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.Startup) + "\\DarkStartup.bat"))
                 {
                     writer.WriteLine("echo off");
@@ -128,6 +120,8 @@ namespace Dark_Toolbox
             {
                 File.Delete(Environment.GetFolderPath(Environment.SpecialFolder.Startup) + "\\DarkStartup.bat");
                 installuninstallbutton.Content = "Install";
+                actionlist.IsEnabled = false;
+                addbutton.IsEnabled = false;
             }
         }
 

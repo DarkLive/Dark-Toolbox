@@ -7,8 +7,16 @@
         xmlns:local="clr-namespace:Dark_Toolbox"
         mc:Ignorable="d"
         GlowBrush="{DynamicResource AccentColorBrush}"
-        Title="Dark Toolbox" Height="500" Width="710" Icon="Resources/Dark-Icons/toolboxicon.png" ResizeMode="NoResize">
-
+        Title="Dark Toolbox" Height="500" Width="710" Icon="Resources/Dark-Icons/toolboxicon.png" ResizeMode="CanMinimize">
+    <controls:MetroWindow.RightWindowCommands>
+        <controls:WindowCommands>
+            <Button Click="ChangeAppStyleButtonClick">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="4 0 0 0" VerticalAlignment="Center" Text="Change App Style..." />
+                </StackPanel>
+            </Button>
+        </controls:WindowCommands>
+    </controls:MetroWindow.RightWindowCommands>
     <Grid>
         <Button x:Name="BulkRenamer" Margin="10,10,0,324" Background="#424242" Click="Navigate" HorizontalAlignment="Left" Width="124">
             <Image Source="Resources/Dark-Icons/bulkrenamertile.png"/>
@@ -60,3 +68,4 @@
         </Button>
     </Grid>
 </controls:MetroWindow>
+    

@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:Dark_Toolbox"
         mc:Ignorable="d"
         GlowBrush="{DynamicResource AccentColorBrush}"
-        Title="Gamma Modifier" Height="265.252" Width="321.127" Loaded="isloaddone" ResizeMode="NoResize" Icon="Resources/Dark-Icons/gammaicon.png">
+        Title="Gamma Modifier" Height="265.252" Width="321.127" Loaded="isloaddone" ResizeMode="CanMinimize" Icon="Resources/Dark-Icons/gammaicon.png">
     
     <Grid HorizontalAlignment="Right" Width="313">
         <Grid.ColumnDefinitions>
