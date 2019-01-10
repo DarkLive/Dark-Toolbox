@@ -5,10 +5,8 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Threading;
 
-namespace Dark_Toolbox
-{
-    public partial class ToolScheduler
-    {
+namespace Dark_Toolbox {
+    public partial class ToolScheduler {
         DispatcherTimer timer = new DispatcherTimer();
         OpenFileDialog filebrowser = new OpenFileDialog();
         Process process = new Process();
@@ -16,8 +14,7 @@ namespace Dark_Toolbox
         public string[,] que = new string[10, 4];
         public int quecount = 0;
 
-        public ToolScheduler()
-        {
+        public ToolScheduler() {
             InitializeComponent();
             timer.Tick += timer_Tick;
             timer.Interval = TimeSpan.FromMinutes(1);
@@ -26,46 +23,29 @@ namespace Dark_Toolbox
             softwarelocklabel.Visibility = Visibility.Hidden; softwareloc.Visibility = Visibility.Hidden;
         }
 
-        private void schedulethis_Click(object sender, RoutedEventArgs e)
-        {
-            if (triggertimepicker.SelectedDate.Value.ToShortDateString() != null || triggertimepicker.SelectedDate.Value.ToShortDateString() != "")
-            {
-                if (triggertypepicker.SelectionBoxItem.ToString() != null || triggertypepicker.SelectionBoxItem.ToString() != "")
-                {
+        private void schedulethis_Click(object sender, RoutedEventArgs e) {
+            if ( triggertimepicker.SelectedDate.Value.ToShortDateString() != null || triggertimepicker.SelectedDate.Value.ToShortDateString() != "" ) {
+                if ( triggertypepicker.SelectionBoxItem.ToString() != null || triggertypepicker.SelectionBoxItem.ToString() != "" ) {
                     string pickedtime = triggertimepicker.SelectedDate.Value.ToShortDateString() + " | " + triggertimepicker.SelectedDate.Value.ToShortTimeString() + " | " + triggertypepicker.SelectionBoxItem.ToString() + " | " + softwareloc.Text.Substring(softwareloc.Text.LastIndexOf("\\") + 1);
                     que[quecount, 0] = triggertimepicker.SelectedDate.Value.ToShortDateString(); que[quecount, 1] = triggertimepicker.SelectedDate.Value.ToShortTimeString(); que[quecount, 2] = triggertypepicker.SelectionBoxItem.ToString(); que[quecount, 3] = softwareloc.Text;
                     knowntriggers.Items.Add(pickedtime.ToString());
                     quecount++;
                     timer.Start();
-                    if (quecount == 10)
-                    {
-                        schedulethis.IsEnabled = false;
-                    }
+                    if ( quecount == 10 ) schedulethis.IsEnabled = false;
                 }
-                else
-                {
-                    MessageBox.Show("You need to pick a trigger type before scheduling any action");
-                }
+                else MessageBox.Show("You need to pick a trigger type before scheduling any action");
             }
-            else
-            {
-                MessageBox.Show("You need to pick a trigger date and time before scheduling any action");
-            }
+            else MessageBox.Show("You need to pick a trigger date and time before scheduling any action");
         }
 
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            for (int i =0; i<quecount;i++)
-            {
-                if (DateTime.Now.ToShortDateString() == que[i, 0])
-                {
-                    if (DateTime.Now.ToShortTimeString() == que[i, 1])
-                    {
-                        switch (que[i, 2])
-                        {
+        private void timer_Tick(object sender, EventArgs e) {
+            for ( int i = 0; i < quecount; i++ ) {
+                if ( DateTime.Now.ToShortDateString() == que[i, 0] ) {
+                    if ( DateTime.Now.ToShortTimeString() == que[i, 1] ) {
+                        switch ( que[i, 2] ) {
                             case "Start Software":
                                 startInfo.FileName = "cmd.exe";
-                                startInfo.Arguments = "/C START " + que[i,3];
+                                startInfo.Arguments = "/C START " + que[i, 3];
                                 process.StartInfo = startInfo;
                                 process.Start();
                                 break;
@@ -116,32 +96,24 @@ namespace Dark_Toolbox
             }
         }
 
-        private void comboselect(object sender, RoutedEventArgs e)
-        {
-            if(((ComboBoxItem)sender).Content.ToString()=="Start Software")
-            {
+        private void comboselect(object sender, RoutedEventArgs e) {
+            if ( ( (ComboBoxItem)sender ).Content.ToString() == "Start Software" ) {
                 Nullable<bool> filepicked = filebrowser.ShowDialog();
-                if (filepicked == true)
-                {
+                if ( filepicked == true ) {
                     string filename = filebrowser.FileName;
                     softwareloc.Text = filename;
                     softwarelocklabel.Visibility = Visibility.Visible; softwareloc.Visibility = Visibility.Visible;
                 }
             }
-            else if (((ComboBoxItem)sender).Content.ToString() == "Close Software")
-            {
+            else if ( ( (ComboBoxItem)sender ).Content.ToString() == "Close Software" ) {
                 Nullable<bool> filepicked = filebrowser.ShowDialog();
-                if (filepicked == true)
-                {
+                if ( filepicked == true ) {
                     string filename = filebrowser.FileName;
                     softwareloc.Text = filename;
                     softwarelocklabel.Visibility = Visibility.Visible; softwareloc.Visibility = Visibility.Visible;
                 }
             }
-            else
-            {
-                softwareloc.Text = ""; softwarelocklabel.Visibility = Visibility.Hidden; softwareloc.Visibility = Visibility.Hidden;
-            }
+            else { softwareloc.Text = ""; softwarelocklabel.Visibility = Visibility.Hidden; softwareloc.Visibility = Visibility.Hidden; }
         }
     }
 }

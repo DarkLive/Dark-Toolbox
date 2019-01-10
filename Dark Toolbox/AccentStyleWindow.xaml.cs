@@ -7,24 +7,20 @@ using System.Windows.Media;
 using MahApps.Metro;
 using MahApps.Metro.Controls;
 
-namespace MahAppsMetroThemes
-{
-    public partial class AccentStyleWindow : MetroWindow
-    {
+namespace MahAppsMetroThemes {
+    public partial class AccentStyleWindow: MetroWindow {
         public static readonly DependencyProperty ColorsProperty
             = DependencyProperty.Register("Colors",
                                           typeof(List<KeyValuePair<string, Color>>),
                                           typeof(AccentStyleWindow),
                                           new PropertyMetadata(default(List<KeyValuePair<string, Color>>)));
 
-        public List<KeyValuePair<string, Color>> Colors
-        {
+        public List<KeyValuePair<string, Color>> Colors {
             get { return (List<KeyValuePair<string, Color>>)GetValue(ColorsProperty); }
             set { SetValue(ColorsProperty, value); }
         }
 
-        public AccentStyleWindow()
-        {
+        public AccentStyleWindow() {
             InitializeComponent();
 
             this.DataContext = this;
@@ -39,18 +35,15 @@ namespace MahAppsMetroThemes
             ThemeManager.ChangeAppStyle(this, theme.Item2, theme.Item1);
         }
 
-        private void ChangeAppThemeButtonClick(object sender, RoutedEventArgs e)
-        {
+        private void ChangeAppThemeButtonClick(object sender, RoutedEventArgs e) {
             var theme = ThemeManager.DetectAppStyle(Application.Current);
             ThemeManager.ChangeAppStyle(Application.Current, theme.Item2, ThemeManager.GetAppTheme("Base" + ( (Button)sender ).Content));
             ThemeManager.ChangeAppStyle(this, theme.Item2, ThemeManager.GetAppTheme("Base" + ( (Button)sender ).Content));
         }
 
-        private void AccentSelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
+        private void AccentSelectionChanged(object sender, SelectionChangedEventArgs e) {
             var selectedAccent = AccentSelector.SelectedItem as Accent;
-            if (selectedAccent != null)
-            {
+            if ( selectedAccent != null ) {
                 var theme = ThemeManager.DetectAppStyle(Application.Current);
                 var themew = ThemeManager.DetectAppStyle(this);
                 ThemeManager.ChangeAppStyle(Application.Current, selectedAccent, theme.Item1);

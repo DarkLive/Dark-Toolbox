@@ -3,19 +3,15 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Dark_Toolbox
-{
-    public partial class ToolGamma
-    {
-        public ToolGamma()
-        {
+namespace Dark_Toolbox {
+    public partial class ToolGamma {
+        public ToolGamma() {
             InitializeComponent();
         }
 
         bool isloadfinished = false;
 
-        private void isloaddone(object sender, RoutedEventArgs e)
-        {
+        private void isloaddone(object sender, RoutedEventArgs e) {
             isloadfinished = true;
             statcombined.Content = SliderCombined.Value; statred.Content = SliderRed.Value; statblu.Content = SliderBlue.Value; statgre.Content = SliderGreen.Value;
         }
@@ -30,8 +26,7 @@ namespace Dark_Toolbox
         public static extern bool GetDeviceGammaRamp(IntPtr hDC, ref RAMP lpRamp);
 
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
-        public struct RAMP
-        {
+        public struct RAMP {
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 256)]
             public UInt16[] Red;
             [MarshalAs(UnmanagedType.ByValArray, SizeConst = 256)]
@@ -40,47 +35,39 @@ namespace Dark_Toolbox
             public UInt16[] Blue;
         }
 
-        public static void SetGamma(int gamma)
-        {
-            if (gamma <= 256 && gamma >= 1)
-            {
+        public static void SetGamma(int gamma) {
+            if ( gamma <= 256 && gamma >= 1 ) {
                 RAMP ramp = new RAMP();
                 ramp.Red = new ushort[256];
                 ramp.Green = new ushort[256];
                 ramp.Blue = new ushort[256];
-                for (int i = 1; i < 256; i++)
-                {
-                    int iArrayValue = i * (gamma + 128);
+                for ( int i = 1; i < 256; i++ ) {
+                    int iArrayValue = i * ( gamma + 128 );
 
-                    if (iArrayValue > 65535) iArrayValue = 65535;
+                    if ( iArrayValue > 65535 ) iArrayValue = 65535;
 
-                    ramp.Red[i] = ramp.Blue[i] = ramp.Green[i] = (ushort)iArrayValue;//HERE
+                    ramp.Red[i] = ramp.Blue[i] = ramp.Green[i] = (ushort)iArrayValue;
                 }
                 SetDeviceGammaRamp(GetDC(IntPtr.Zero), ref ramp);
             }
         }
 
-        public static void SetGammaColor(int red, int blue, int green)
-        {
-            if (red <= 256 && red >= 1)
-            {
-                if (blue <= 256 && blue >= 1)
-                {
-                    if (green <= 256 && green >= 1)
-                    {
+        public static void SetGammaColor(int red, int blue, int green) {
+            if ( red <= 256 && red >= 0 ) {
+                if ( blue <= 256 && blue >= 0 ) {
+                    if ( green <= 256 && green >= 0 ) {
                         RAMP ramp = new RAMP();
                         ramp.Red = new ushort[256];
                         ramp.Green = new ushort[256];
                         ramp.Blue = new ushort[256];
-                        for (int i = 1; i < 256; i++)
-                        {
-                            int RedValue = i * (red + 128);
-                            int BluValue = i * (blue + 128);
-                            int GreValue = i * (green + 128);
+                        for ( int i = 1; i < 256; i++ ) {
+                            int RedValue = i * ( red + 128 );
+                            int BluValue = i * ( blue + 128 );
+                            int GreValue = i * ( green + 128 );
 
-                            if (RedValue > 65535) RedValue = 65535;
-                            if (BluValue > 65535) BluValue = 65535;
-                            if (GreValue > 65535) GreValue = 65535;
+                            if ( RedValue > 65535 ) RedValue = 65535;
+                            if ( BluValue > 65535 ) BluValue = 65535;
+                            if ( GreValue > 65535 ) GreValue = 65535;
 
                             ramp.Red[i] = (ushort)RedValue;
                             ramp.Blue[i] = (ushort)BluValue;
@@ -90,41 +77,26 @@ namespace Dark_Toolbox
                     }
                 }
             }
-        }      
-
-        private void Reset(object sender, RoutedEventArgs e)
-        {
-            if (((Button)sender).Tag.ToString() == "ResetCombined")
-            {
-                SliderCombined.Value = 128;
-            }
-            else if (((Button)sender).Tag.ToString() == "ResetRed")
-            {
-                SliderRed.Value = 128;
-            }
-            else if (((Button)sender).Tag.ToString() == "ResetBlu")
-            {
-                SliderBlue.Value = 128;
-            }
-            else if (((Button)sender).Tag.ToString() == "ResetGre")
-            {
-                SliderGreen.Value = 128;
-            }
         }
 
-        private void SliderMove(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            if (isloadfinished == true)
-            {
-                if (((Slider)sender).Name == "SliderCombined")
-                {
-                    SetGamma(Convert.ToByte(((Slider)sender).Value));
-                    statcombined.Content = Convert.ToByte(((Slider)sender).Value);
+        private void Reset(object sender, RoutedEventArgs e) {
+            if ( ( (Button)sender ).Tag.ToString() == "ResetCombined" ) SliderCombined.Value = 128;
+            else if ( ( (Button)sender ).Tag.ToString() == "ResetRed" ) SliderRed.Value = 128;
+            else if ( ( (Button)sender ).Tag.ToString() == "ResetBlu" ) SliderBlue.Value = 128;
+            else if ( ( (Button)sender ).Tag.ToString() == "ResetGre" ) SliderGreen.Value = 128;
+        }
+
+        private void SliderMove(object sender, RoutedPropertyChangedEventArgs<double> e) {
+            if ( isloadfinished == true ) {
+                if ( ( (Slider)sender ).Name == "SliderCombined" ) {
+                    SetGamma(Convert.ToByte(( (Slider)sender ).Value));
+                    statcombined.Content = ( (int)SliderCombined.Value );
                 }
-                else 
-                {
+                else {
                     SetGammaColor(Convert.ToByte(SliderRed.Value), Convert.ToByte(SliderBlue.Value), Convert.ToByte(SliderGreen.Value));
-                    statred.Content = ((Slider)sender).Value.ToString();
+                    statred.Content = ( (int)SliderRed.Value );
+                    statblu.Content = ( (int)SliderBlue.Value );
+                    statgre.Content = ( (int)SliderGreen.Value );
                 }
             }
         }
