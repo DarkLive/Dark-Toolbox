@@ -75,6 +75,7 @@ namespace Dark_Toolbox {
             }
             else {
                 File.Delete(Environment.GetFolderPath(Environment.SpecialFolder.Startup) + $@"\DarkStartup.bat");
+                setactions.Items.Clear();
                 installuninstallbutton.Content = "Install";
                 actionlist.IsEnabled = false;
                 addbutton.IsEnabled = false;
